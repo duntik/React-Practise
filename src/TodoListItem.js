@@ -1,11 +1,13 @@
 import React from 'react'
 
-const TodoListItem = () => {
+const TodoListItem = (props) => {
     return(
         <div>
-            ToDo List Item
+            <input type='checkbox' checked={props.completed} />
+            <span>{props.title}</span>
+            <button>Delete Todo</button>
         </div>
     )
     }
-        
+
 export default TodoListItem
